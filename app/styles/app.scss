@@ -3,11 +3,29 @@
 @import 'variables';
 @import 'mixins';
 
+$text-color: #888;
+$background-grey: #a9dbd8;
+$background-white: #fff;
+
 body {
+  background-color: $background-grey;
+  color: $text-color;
   font-size: 18px;
   line-height: 1.6;
   margin: 40px auto;
-  max-width: 650px;
+  max-width: 1050px;
+}
+
+div {
+  background-color: $background-white;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: left;
+}
+
+.container-fluid {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .hidden :not(:first-child) {
@@ -20,4 +38,20 @@ body {
 
 .done {
   text-decoration: line-through;
+}
+
+.list-hide :not(:first-child) {
+  display: none;
+}
+
+.crossed-off {
+  text-decoration: line-through;
+}
+
+.list-header:hover {
+  cursor: pointer;
+}
+
+.list-item:hover {
+  cursor: pointer;
 }
