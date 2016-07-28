@@ -13,5 +13,8 @@ export default Ember.Route.extend({
     delete(list) {
       list.destroyRecord();
     },
+    edit(list) {
+      this.transitionTo('lists/edit', list);
+    },
   },
 });

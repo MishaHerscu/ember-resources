@@ -1,5 +1,7 @@
 {{#each model as |list|}}
-  {{listr-list/card list=list delete="delete"}}
+  {{listr-list/card list=list delete="delete" edit="edit"}}
 {{/each}}
+
+<br>
 
 {{listr-list/new submit='create'}}
