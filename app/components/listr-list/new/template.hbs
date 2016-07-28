@@ -1,0 +1,9 @@
+{{#link-to 'list' list}}
+  <h2>{{list.title}}</h2>
+{{/link-to}}
+
+<form {{action "submit" on="submit"}}>
+  {{input placeholder="New List"
+         class="input-group form-control"
+         value=form.title}}
+</form>
